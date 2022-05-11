@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/members", membersRoute);
 app.use("/events", eventsRoute);
 
-const PORT=process.env.port  || 5050;
+const PORT = process.env.port || 5050;
 
 app.listen(PORT, () => {
   console.log("Backend is running");
