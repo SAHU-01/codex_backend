@@ -7,7 +7,11 @@ const memberSchema = new mongoose.Schema(
     githubDP: String,
     linkedin: String,
     name: String,
-    role: String,
+    role: {
+      type: String,
+      enum: ["member", "alumni", "coordinator"],
+      default: "member"
+    },
     skill: String,
     twitter: String,
   },
