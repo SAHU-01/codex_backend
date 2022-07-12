@@ -717,6 +717,15 @@ function seedMembers() {
       skill: "Artificial Intelligence, Frontend, App Development",
       twitter: "",
     },
+    {
+      github:"https://github.com/Parag357",
+      githubDP:"https://github.com/Parag357.png",
+      linkedin:"https://www.linkedin.com/in/parag-bhattacharjee-905196179/",
+      name:"Parag Bhattacharjee",
+      role:"alumni",
+      skill:"Backend, Frontend, Dev-ops",
+      twitter:""
+    }
   ];
   Member.insertMany(members, function (err) {
     if (err) console.log("Opps! Failed to insert to db.");
